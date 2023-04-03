@@ -12,11 +12,11 @@ public class BaseTests {
         System.setProperty("webdriver.chrome.driver", "src/test/resources/chromedriver"); // add .exe on Windows OS
         driver = new ChromeDriver();
         driver.get("https://the-internet.herokuapp.com/");
+        driver.manage().window().maximize();
         driver.manage().window().setSize(new Dimension(375, 812));
-        driver.manage().window().fullscreen();
         driver.getTitle();
         System.out.println(driver.getTitle());
-
+        driver.close();
     }
 
     public static void main(String[] args) {
