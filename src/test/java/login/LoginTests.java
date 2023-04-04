@@ -7,6 +7,7 @@ import pages.SecureAreaPage;
 import static org.testng.Assert.*;
 
 public class LoginTests extends BaseTests {
+
     @Test
     public void testSuccessfulLogin(){
         LoginPage loginPage = homePage.clickFormAuthentication();
