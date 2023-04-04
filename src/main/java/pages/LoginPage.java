@@ -7,7 +7,7 @@ public class LoginPage {
     private WebDriver driver;
     private By usernameField = By.id("username");
     private By passwordField = By.id("password");
-    private By loginButton = By.id("login");
+    private By loginButton = By.cssSelector("#login button");
     public LoginPage(WebDriver driver) {
         this.driver = driver;
     }

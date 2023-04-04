@@ -13,9 +13,4 @@ public class SecureAreaPage {
     public String getAlertText(){
         return driver.findElement(statusAlert).getText();
     }
-
-    public LoginPage logOut(){
-        driver.findElement(By.linkText("Log Out")).click();
-        return new LoginPage(driver);
-    }
 }
