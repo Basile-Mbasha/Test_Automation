@@ -8,7 +8,6 @@ import org.openqa.selenium.interactions.Actions;
 public class HoversPage {
 
     private WebDriver driver;
-
     private By figureBox = By.className("figure");
     private By boxCaption = By.className("figcaption");
 
@@ -18,11 +17,11 @@ public class HoversPage {
     }
 
     /**
-     * @param index starts at 1
+     * @param index here starts at 1
      */
     public FigureCaption hoverOverFigure(int index){
-        WebElement figure = driver.findElements(figureBox).get(index - 1);
 
+        WebElement figure = driver.findElements(figureBox).get(index - 1);
         Actions actions = new Actions(driver);
         actions.moveToElement(figure).perform();
 
